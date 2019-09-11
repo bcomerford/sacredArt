@@ -5,12 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel=stylesheet>
+  <style type="text/css">
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #000000;
+    }
+    .container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+    }
+    h2, p {
+        color: #FFFFFF;
+    }
+  </style>
   <%= favicon_link_tag 'favicon.ico' %>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
     <body>
-    <%= image_tag("event_logo.gif", :alt => "Few Remaining Friends") %>
+        <div class="container">
+            <%= image_tag("event_logo.gif", :alt => "Few Remaining Friends") %>
+            <div>
+                <h2>NEW EXHIBITION FROM JULIE R. MADISON</h2>
+                <p>Otherworldly creatures that tap into our primal, naturalistic side, eliciting the emotions therein.</p>
+                <h2>OPENING NIGHT RECEPTION</h2>
+                <p>Friday, October 11th, 6 - 10pm</p>
+                <h2>SACRED ART</h2>
+                <p>4619 North Lincoln Ave, Chicago IL</p>
+                <ul>
+                    <li>
+                        <a href="#">RSVP on Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">RSVP on Eventbrite</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>

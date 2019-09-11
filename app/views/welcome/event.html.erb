@@ -37,6 +37,13 @@
         background-color: #FFFFFF;
         color: #000000;
     }
+    body.dark-mode .btn-secondary {
+        background-color: #FFFFFF;
+        color: #000000;
+    }
+    body:not(.dark-mode) .btn-secondary:hover {
+        color: #FFFFFF;
+    }
   </style>
   <%= favicon_link_tag 'favicon.ico' %>
   <%= csrf_meta_tags %>
@@ -54,10 +61,10 @@
                 <p>4619 North Lincoln Ave, Chicago IL</p>
                 <ul class="list-inline">
                     <li>
-                        <a class="btn btn-secondary" href="#">RSVP on Facebook</a>
+                        <a class="btn btn-secondary" href="https://www.facebook.com/events/1199517063506075/">RSVP on Facebook</a>
                     </li>
                     <li>
-                        <a class="btn btn-secondary" href="#">RSVP on Eventbrite</a>
+                        <a class="btn btn-secondary" href="https://www.eventbrite.com/e/few-remaining-friends-opening-night-tickets-68816276335">RSVP on Eventbrite</a>
                     </li>
                     <li>
                         <a class="btn btn-secondary" href="/index">Continue to site</a>

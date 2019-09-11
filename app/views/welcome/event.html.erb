@@ -28,6 +28,7 @@
     .btn-secondary {
         background-color: #FFFFFF;
         color: #000000;
+        margin-bottom: 10px;
     }
   </style>
   <%= favicon_link_tag 'favicon.ico' %>
@@ -35,7 +36,8 @@
 </head>
     <body>
         <div class="container">
-            <%= image_tag("event_logo.gif", :alt => "Few Remaining Friends") %>
+            <%= image_tag("event_logo.gif", :alt => "Few Remaining Friends", :class => "img-responsive hidden-xs hidden-sm") %>
+            <%= image_tag("event_logo-mobile.gif", :alt => "Few Remaining Friends", :class => "img-responsive visible-xs visible-sm") %>
             <div>
                 <h2>NEW EXHIBITION FROM JULIE R. MADISON</h2>
                 <p>Otherworldly creatures that tap into our primal, naturalistic side, eliciting the emotions therein.</p>

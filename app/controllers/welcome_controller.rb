@@ -9,6 +9,11 @@ class WelcomeController < ApplicationController
   end
 
   def event
+    if params[:theme] == "dark"
+      @dark = true
+    else
+      @dark = false
+    end
     render layout: false
   end
 

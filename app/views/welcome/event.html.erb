@@ -25,6 +25,10 @@
     h2, p {
         color: #FFFFFF;
     }
+    .btn-secondary {
+        background-color: #FFFFFF;
+        color: #000000;
+    }
   </style>
   <%= favicon_link_tag 'favicon.ico' %>
   <%= csrf_meta_tags %>
@@ -39,12 +43,15 @@
                 <p>Friday, October 11th, 6 - 10pm</p>
                 <h2>SACRED ART</h2>
                 <p>4619 North Lincoln Ave, Chicago IL</p>
-                <ul>
+                <ul class="list-inline">
                     <li>
-                        <a href="#">RSVP on Facebook</a>
+                        <a class="btn btn-secondary" href="#">RSVP on Facebook</a>
                     </li>
                     <li>
-                        <a href="#">RSVP on Eventbrite</a>
+                        <a class="btn btn-secondary" href="#">RSVP on Eventbrite</a>
+                    </li>
+                    <li>
+                        <a class="btn btn-secondary" href="/indexadd callo">Continue to site</a>
                     </li>
                 </ul>
             </div>

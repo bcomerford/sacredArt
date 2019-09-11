@@ -8,6 +8,10 @@ class WelcomeController < ApplicationController
   def index
   end
 
+  def event
+    render layout: false
+  end
+
   def about
   end
 

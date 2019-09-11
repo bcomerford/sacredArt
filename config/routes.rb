@@ -14,6 +14,8 @@ Rails.application.routes.draw do
 
   get 'index'  => 'welcome#index'
 
+  get 'fewremainingfriends' => 'welcome#event'
+
   get 'about' => 'welcome#about'
 
   get 'new' => 'welcome#new'

@@ -24,6 +24,6 @@ Rails.application.routes.draw do
 
   get 'contact' => 'welcome#contact'
 
-  root 'welcome#event'
+  root 'welcome#index'
 
 end
